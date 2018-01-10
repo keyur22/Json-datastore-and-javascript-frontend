@@ -1,0 +1,59 @@
+JSON Files:
+
+1. Products_Catalog         -  A complete list of items available on the e-commerce website.It is divided into four categories namely,
+                                             Electronics,Appliances,Men and Women.These are further divided into sub-categories as follows:
+                                             1.1 Electronics - Mobiles,Mobile Accessories,computer Accessories,laptops,Desktop PC's and tablets.
+                                             1.2 Appliances - Televisions, Air Conditioners and Washing Machines.
+                                             1.3 Men - Footwear,TopWear and bottomWear.
+                                             1.4 Women - Jewellery, Beauty & Grooming and Ethnic Wear.
+
+2. Products_List               -   List of all the mobiles as per the filters selected by users. This list contains 3 mobiles along with its brief details.
+                                             The mobiles included are:
+                                             1. Lenovo k8 Plus (Venom Black, 32 GB)
+                                             2. Redmi Note 4 (Gold, 64 GB)
+                                             3. Moto G5 Plus (Lunar Gray, 32 GB)
+
+3. Products_Description   -   Full details of a mobile viewed by the user. The mobile used here is Redmi Note 4 (Black, 64 GB) (4 GB RAM)
+                                             Description is divided into four parts namely,
+                                             Summary, specifications, ratingsAndReviews and questionsAndAnswers.
+                                             1. Summary                        -  A brief description of mobile sufficient to get an overview of that mobile.
+                                             2. Specifications                 -  An in-depth details of the specs of the mobile.
+                                             3. RatingsAnd Reviews      -  Contains reviews and ratings given by the users to the mobile.
+                                             4. Questionsand Answers  -  FAQs regarding the mobile.
+
+
+JS Functions:
+
+1. Products_catalog          -  1. display(catalog) :
+                                                       Used to display the entire JSON data.
+
+                                             2. var find = "Lenovo"; searchMobilesByName(find) :
+                                                        Used to search if the specified mobile category is available or not.If it is available display "Available" else
+                                                        display "Not Available".
+
+                                             3. var index = 4; searchFootwearByIndex(index) :
+                                                       Used to search the element in footwear array of Men category according to the index specified. If index is valid the
+                                                       corresponding footwear is displayed else "Invalid index" is displayed.
+
+2. Products_list                  -  1. display(list) :
+                                                       Used to display the entire list of mobiles.
+
+                                              2. var id = 8236; searchById(list, id):
+                                                       Used to find the mobile whose id is specified. If mobile is found , its name is displayed else
+                                                       "Item not found" is displayed.
+
+                                              3. var index = 1; searchByIndex(list, index):
+                                                       Used to find the product according to the index specified.If index is invalid "Invalid Index" is displayed,
+                                                       else the name of the specified product is displayed.
+
+3. Products_Description    -  1. display(description):
+                                                       Used to display the entire Description of the product.
+
+                                             2. var search = "display"; searchSpecs(search):
+                                                       Used to search a specific specification according to entry provided by user. In this case, "Display" specification
+                                                       is searched. If that specification isn't available "Invalid Specification is displayed" otherwise the corresponding
+                                                       details are displayed.
+
+                                             3. var index = 1; searchQuestions(index):
+                                                       Used to search question according to the index provided by the user. If index is invalid, then "Invalid index" is
+                                                       displayed else the given question along with its details is printed.
